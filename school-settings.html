@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Head | School Settings - Iloilo Doctor's College</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <button type="button" class="button-link-dark circle" id="sidebar-toggler">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
+                    <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
+                </a>
+                <ul class="navmenu">
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">flag</span>
+                            First Quarter
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">today</span>
+                            SY: 2022 - 2023
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">notifications</span>
+                            Notification
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="initial-circle-xs background-color-primary">R</div>
+                            <div class="font-size-14 font-weight-600 nav-username">Registrar, Head Account</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">star</span>News & Events</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">settings</span>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">contact_support</span>Submit Ticket</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">admin_panel_settings</span>Change Department</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">description</span>User Manual</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">logout</span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <ul class="side-menu">
+                <li class="side-item">
+                    <div class="d-flex align-items-center background-accent-primary rounded-4 gap-3 py-2 px-3">
+                        <div class="initial-circle-sm rounded-4 background-accent-primary">
+                            <span class="material-symbols-rounded">person</span>
+                        </div>
+                        <div class="me-auto">
+                            <div class="font-size-14 font-weight-600">Registrar Head</div>
+                            <div class="font-size-12">User Account</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="side-item-header">Menu</li>
+                <li class="side-item">
+                    <a class="side-link" href="index.html">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="side-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="#">
+                        <span class="material-symbols-rounded">mail</span>
+                        <span class="side-text">Messages</span>
+                    </a>
+                </li>
+                <li class="side-item-header">Sections</li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">school</span>
+                            <span class="side-text">School</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="academic-year.html" class="collapse-item">Academic Year</a>
+                        <a href="announcements.html" class="collapse-item">Announcements</a>
+                        <a href="calendar.html" class="collapse-item">Calendar</a>
+                        <a href="grading-period.html" class="collapse-item">Grading Period</a>
+                        <a href="open-semester.html" class="collapse-item">Open Semester</a>
+                        <a href="semester.html" class="collapse-item">Semester</a>
+                        <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
+                        <a href="school-settings.html" class="collapse-item active">School Settings</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">badge</span>
+                            <span class="side-text">Program</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="program-category.html" class="collapse-item">Program Category</a>
+                        <a href="year-levels.html" class="collapse-item">Year Levels</a>
+                        <a href="programs.html" class="collapse-item">Programs</a>
+                        <a href="curriculum.html" class="collapse-item">Curriculum</a>
+                        <a href="program-department.html" class="collapse-item">Program Departments</a>
+                        <a href="master-courses.html" class="collapse-item">Master Courses</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">manage_accounts</span>
+                            <span class="side-text">Admission</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Open Admission</a>
+                        <a href="#" class="collapse-item">Applicants</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">summarize</span>
+                            <span class="side-text">Enrollment</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Open Enrollment</a>
+                        <a href="#" class="collapse-item">Enrollment Settings</a>
+                        <a href="#" class="collapse-item">Block Sections</a>
+                        <a href="#" class="collapse-item">Course Schedules</a>
+                        <a href="#" class="collapse-item">Rooms</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">wb_incandescent</span>
+                            <span class="side-text">Student</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Search Student</a>
+                        <a href="#" class="collapse-item">Officially Enrolled</a>
+                        <a href="#" class="collapse-item">Registrar Verified</a>
+                        <a href="#" class="collapse-item">Enrollees</a>
+                        <a href="#" class="collapse-item">Credential Masterlist</a>
+                        <a href="#" class="collapse-item">Generate Grade Slip</a>
+                        <a href="#" class="collapse-item">Grading System</a>
+                        <a href="#" class="collapse-item">ID Code Setting</a>
+                        <a href="#" class="collapse-item">Import Students</a>
+                        <a href="#" class="collapse-item">Permit Setting</a>
+                        <a href="#" class="collapse-item">Reset Student Password</a>
+                        <a href="#" class="collapse-item">Student Login Setting</a>
+                        <a href="#" class="collapse-item">Tracks and Strands</a>
+                        <a href="#" class="collapse-item">Request Settings</a>
+                        <a href="#" class="collapse-item">Pending Requests</a>
+                        <a href="#" class="collapse-item">Granted Request</a>
+                        <a href="#" class="collapse-item">Student Portal Settings</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">category</span>
+                            <span class="side-text">CHED Reports</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">CHED Pograms</a>
+                        <a href="#" class="collapse-item">Complete List of Enrollees</a>
+                        <a href="#" class="collapse-item">Enrollment List</a>
+                        <a href="#" class="collapse-item">NSTP Enrollment List</a>
+                        <a href="#" class="collapse-item">Report On Promotions</a>
+                        <a href="#" class="collapse-item">Summary of Enrollment</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">receipt_long</span>
+                            <span class="side-text">Reports and Records</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="#" class="collapse-item">Classlist Report</a>
+                        <a href="#" class="collapse-item">Download Student Profile</a>
+                        <a href="#" class="collapse-item">Enrollment List By Student Type</a>
+                        <a href="#" class="collapse-item">Exam Permit Report</a>
+                        <a href="#" class="collapse-item">GWA Reports</a>
+                        <a href="#" class="collapse-item">List of Transferees</a>
+                        <a href="#" class="collapse-item">Masterlist By Course</a>
+                        <a href="#" class="collapse-item">Masterlist By Course Enrollee</a>
+                        <a href="#" class="collapse-item">Student Directories</a>
+                        <a href="#" class="collapse-item">Summary of Grades</a>
+                        <a href="#" class="collapse-item">Students with Promisory Note</a>
+                        <a href="#" class="collapse-item">Student Bin</a>
+                        <a href="#" class="collapse-item">Withdrawn Students</a>
+                    </div>
+                </li>
+                <li class="side-item-header">Settings</li>
+                <li class="side-item">
+                    <a class="side-link" href="profile.html">
+                        <span class="material-symbols-rounded">person</span>
+                        <span class="side-text">Profile</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-password.html">
+                        <span class="material-symbols-rounded">password</span>
+                        <span class="side-text">Change Password</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-school-year.html">
+                        <span class="material-symbols-rounded">change_circle</span>
+                        <span class="side-text">Change School Year</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="bread">
+                    <ol class="bread-menu">
+                        <li class="bread-item">
+                            <a href="#" class="bread-link">Dashboard</a>
+                        </li>
+                        <li class="bread-item">
+                            <a href="#" class="bread-link" aria-current="page">School Section</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">School Settings</span>
+                        </li>
+                    </ol>
+                    <h4>School Settings</h4>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="body">
+                                <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ratione nihil perferendis libero rem, porro sint ullam facilis molestias dolores doloribus doloremque culpa. Quisquam facilis quod, officia reiciendis doloremque voluptatum!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="body">
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-name" class="form-label">School Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-fullname" class="form-label">School Fullname</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Address</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Telephone</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Email Address</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">Tag Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Will appear at the top navigation bar beside school name</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">Tag Color</label>
+                                                <input type="color" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School President Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school president</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Principal Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school principal</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Principal Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school principal position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Accountant / Cashier Head Name </label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school accountant</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Accountant Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school accountant position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Registrar Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school registrar</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Registrar Position</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school registrar position</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Cashier Name</label>
+                                                <input type="text" class="form-control" required>
+                                                <div class="form-text">Name of school coordinator</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="form-group">
+                                                <label for="school-id" class="form-label">School Logo: (JPG and PNG only) (Ideal Size 238 x 84)</label>
+                                                <input type="file" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <button type="submit" class="button-primary">Update Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <button type="button" class="button-secondary circle md shadow-sm position-fixed bottom-0 right-0 my-5 mx-5 theme-btn-switcher">
+        <span class="material-symbols-rounded theme-icon-switcher">light_mode</span>
+    </button>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
