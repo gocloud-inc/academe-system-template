@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Program Department - Iloilo Doctor's College</title>
+    <title>Registrar Head | Block Sections - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -129,7 +129,7 @@
                         <a href="year-levels.html" class="collapse-item">Year Levels</a>
                         <a href="programs.html" class="collapse-item">Programs</a>
                         <a href="curriculum.html" class="collapse-item">Curriculum</a>
-                        <a href="program-department.html" class="collapse-item active">Program Departments</a>
+                        <a href="program-department.html" class="collapse-item">Program Departments</a>
                         <a href="master-courses.html" class="collapse-item">Master Courses</a>
                     </div>
                 </li>
@@ -159,7 +159,7 @@
                     <div class="side-menu-collapse">
                         <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
                         <a href="enrollment-settings.html" class="collapse-item">Enrollment Settings</a>
-                        <a href="block-sections.html" class="collapse-item">Block Sections</a>
+                        <a href="block-sections.html" class="collapse-item active">Block Sections</a>
                         <a href="#" class="collapse-item">Course Schedules</a>
                         <a href="#" class="collapse-item">Rooms</a>
                     </div>
@@ -266,13 +266,13 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Program Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Enrollment Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Program Department</span>
+                            <span class="bread-link" aria-current="page">Block Sections</span>
                         </li>
                     </ol>
-                    <h4>Program Department</h4>
+                    <h4>Block Sections</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
@@ -280,61 +280,54 @@
                         <form action="">
                             <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
                                 <div class="row g-3">
-                                    <div class="col-xl-4">  
+                                    <div class="col-xl-5">  
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option disabled selected>-- Filter By --</option>
-                                                <option value="department">Department</option>
-                                                <option value="dean">Dean</option>
+                                                <option disabled selected>-- School Year Level --</option>
+                                                <option value="1">1st Year</option>
+                                                <option value="2">2nd Year</option>
+                                                <option value="3">3rd Year</option>
+                                                <option value="4">4th Year</option>
+                                                <option value="5">PEC</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4">  
+                                    <div class="col-xl-5">  
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Keyword" required>
+                                            <select class="form-control">
+                                                <option disabled selected>-- Search Program --</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xl-2">
                                         <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
-                                    </div>
-                                    <div class="col-xl-2">
-                                        <button type="submit" class="button-dark block"><span class="material-symbols-rounded">add</span> Create New Record</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="col-xl-12">
-                        <div class="table-reponsive">
+                        <div class="table-responsive">
                             <table class="table table-bordered background-color-card">
                                 <thead>
                                     <tr>
-                                        <th>Department Name</th>
-                                        <th>Department Head</th>
-                                        <th>Programs</th>
-                                        <th class="text-center" width="7%">Action</th>
+                                        <th>Block Name</th>
+                                        <th class="text-center">Semester</th>
+                                        <th class="text-center">Academic Year</th>
+                                        <th>Year & Programs Assigned</th>
+                                        <th class="text-center" width="15%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>College of Education</td>
-                                        <td>AHDE, TCOANUC IAACDCEM</td>
+                                        <td>BSIT 1A</td>
+                                        <td class="text-center">2nd</td>
+                                        <td class="text-center">2020-2021</td>
+                                        <td>1st Year-BSIT</td>
                                         <td>
-                                            <ol class="px-3 m-0">
-                                                <li>BEED - Bachelor of Elementary Education</li>
-                                                <li>BECEd - Bachelor of Early Childhood Education</li>
-                                                <li>PEC - Professional Education Courses</li>
-                                            </ol>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown">
-                                                <button type="button" role="button" class="button-accent-primary circle sm" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="material-symbols-rounded">more_horiz</span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">edit</span> Edit</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">delete</span> Delete</a></li>
-                                                </ul>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <a href="#" class="button-accent-success"><span class="material-symbols-rounded">edit</span> Schedule</a>
+                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">delete</span> Destroy</button>
                                             </div>
                                         </td>
                                     </tr>
