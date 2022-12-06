@@ -9,7 +9,7 @@ To install this project just follow the process chronologically.
 Clone the project via HTTPS
 
 ```bash
-git clone https://github.com/GitMarkPaul/academe-template.git
+git clone https://github.com/gocloud-inc/academe-system-template.git
 ```
 ## Configuration
 
