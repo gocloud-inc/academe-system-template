@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Master Courses - Iloilo Doctor's College</title>
+    <title>Registrar Head | Applicants - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -130,7 +130,7 @@
                         <a href="programs.html" class="collapse-item">Programs</a>
                         <a href="curriculum.html" class="collapse-item">Curriculum</a>
                         <a href="program-department.html" class="collapse-item">Program Departments</a>
-                        <a href="master-courses.html" class="collapse-item active">Master Courses</a>
+                        <a href="master-courses.html" class="collapse-item">Master Courses</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -144,7 +144,7 @@
                     
                     <div class="side-menu-collapse">
                         <a href="open-admission.html" class="collapse-item">Open Admission</a>
-                        <a href="applicants.html" class="collapse-item">Applicants</a>
+                        <a href="applicants.html" class="collapse-item active">Applicants</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -266,71 +266,87 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Program Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Admission Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Master Courses</span>
+                            <span class="bread-link" aria-current="page">Applicants</span>
                         </li>
                     </ol>
-                    <h4>Course Master List</h4>
+                    <h4>Applicants for 2020-2021(2nd)</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
                         <form action="">
-                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
-                                <div class="row g-3">
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Code" required>
+                            <div class="card">
+                                <div class="body">
+                                    <div class="font-size-16 font-weight-600 mb-3">Search Applicant</div>
+                                    <div class="row g-3">
+                                        <div class="col-xl-5">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option disabled selected>-- Registrar Status --</option>
+                                                    <option value="1">Approved</option>
+                                                    <option value="2">Rejected</option>
+                                                    <option value="3">Pending</option>
+                                                    <option value="4">All</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Description" required>
+                                        <div class="col-xl-5">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option disabled selected>-- Guidance Status --</option>
+                                                    <option value="1">Passed</option>
+                                                    <option value="2">Failed</option>
+                                                    <option value="3">Pending</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-2">
-                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
-                                    </div>
-                                    <div class="col-xl-2">
-                                        <button type="submit" class="button-dark block"><span class="material-symbols-rounded">add</span> Add New Course</button>
-                                    </div>
-                                    <div class="col-xl-2">
-                                        <button type="submit" class="button-dark block"><span class="material-symbols-rounded">upload</span> Upload By Excel</button>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="col-xl-12">
-                        <div class="table-reponsive">
-                            <table class="table table-bordered background-color-card">
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0 background-color-card">
                                 <thead>
                                     <tr>
-                                        <th>Code</th>
-                                        <th>Description</th>
-                                        <th class="text-center" width="6%">Unit</th>
-                                        <th class="text-center" width="6%">Lec</th>
-                                        <th class="text-center" width="6%">Lab</th>
-                                        <th class="text-center" width="12%">Year Created</th>
-                                        <th class="text-center" width="7%">Action</th>
+                                        <th>Ref. No.</th>
+                                        <th>Applicant Name</th>
+                                        <th>E-mail</th>
+                                        <th>Date Submitted</th>
+                                        <th>Program</th>
+                                        <th class="text-center">Major</th>
+                                        <th class="text-center">Year Level</th>
+                                        <th class="text-center">Guidance Status</th>
+                                        <th class="text-center">Registrar Status</th>
+                                        <th class="text-center">Payment Status</th>
+                                        <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Acctg 1</td>
-                                        <td>Financial Accounting & Reporting</td>
-                                        <td class="text-center">6.00</td>
-                                        <td class="text-center">6</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">2018 - 2019</td>
+                                        <td>7741</td>
+                                        <td>Ballesteros, Khyiel Louise V.</td>
+                                        <td>leahcimcao@gmail.com</td>
+                                        <td>01-18-2021</td>
+                                        <td>BSA</td>
+                                        <td>-</td>
+                                        <td class="text-center">1st Year</td>
+                                        <td class="text-center">Passed</td>
+                                        <td class="text-center">Approved</td>
+                                        <td class="text-center">Paid</td>
                                         <td class="text-center">
-                                            <a href="#" class="button-accent-primary block"><span class="material-symbols-rounded">edit</span> Edit</a>
+                                            <a href="#" class="button-accent-primary block">Evaluation Sheet</a>
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>    
                         </div>
                     </div>
                 </div>
