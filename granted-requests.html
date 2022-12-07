@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Reset Student Password - Iloilo Doctor's College</title>
+    <title>Registrar Head | Granted Requests - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -184,12 +184,12 @@
                         <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
                         <a href="import-students.html" class="collapse-item">Import Students</a>
                         <a href="permit-setting.html" class="collapse-item">Permit Setting</a>
-                        <a href="reset-student-password.html" class="collapse-item active">Reset Student Password</a>
+                        <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
                         <a href="student-login-setting.html" class="collapse-item">Student Login Setting</a>
                         <a href="tracks-and-strands.html" class="collapse-item">Tracks and Strands</a>
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
                         <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
-                        <a href="granted-requests.html" class="collapse-item">Granted Request</a>
+                        <a href="granted-requests.html" class="collapse-item active">Granted Request</a>
                         <a href="#" class="collapse-item">Student Portal Settings</a>
                     </div>
                 </li>
@@ -269,73 +269,70 @@
                             <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Student Reset Password</span>
+                            <span class="bread-link" aria-current="page">Granted Requests</span>
                         </li>
                     </ol>
-                    <h4>Student Reset Password</h4>
+                    <h4>Student Granted Requests for Registrar Head</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <form action="">
-                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
-                                <div class="font-size-18 font-weight-600 mb-3">Filter Student</div>
-                                <div class="row g-3">
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Student ID" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2">  
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
+                            <form action="">
+                                <div class="row align-items-center justify-content-between g-3">
+                                    <div class="col-xl-5">
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option value="all">All</option>
+                                                <option disabled selected>-- Filter By --</option>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="form-group">
+                                            <input type="search" class="form-control" placeholder="Keyword">
                                         </div>
                                     </div>
                                     <div class="col-xl-2">
                                         <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered background-color-card">
+                            <table class="table table-bordered mb-0 background-color-card">
                                 <thead>
                                     <tr>
+                                        <th>Date</th>
                                         <th>Student ID</th>
-                                        <th>Name</th>
-                                        <th>Year</th>
-                                        <th>Course</th>
-                                        <th>Birth Date</th>
-                                        <th class="text-center" width="15%">Action</th>
+                                        <th>Fullname</th>
+                                        <th>Request</th>
+                                        <th>Remark</th>
+                                        <th>Status</th>
+                                        <th>Department Remark</th>
+                                        <th class="text-center" width="20%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>20-C-0011</td>
-                                        <td>Avila, Ronnel Dime</td>
-                                        <td>1st Year</td>
-                                        <td>Bachelor of Science in Information Technology</td>
-                                        <td>02-20-1999</td>
+                                        <td>06/01/2020 07:29 AM</td>
+                                        <td>14-H-255</td>
+                                        <td>D oenel, Kyla Bianca</td>
+                                        <td>TOR</td>
+                                        <td>-</td>
+                                        <td>PENDING</td>
+                                        <td>-</td>
                                         <td>
-                                            <button type="button" class="button-accent-primary block">Reset Password</button>
+                                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                                <a href="#" class="button-accent-success block"><span class="material-symbols-rounded">edit</span> Edit</a>
+                                                <a href="#" class="button-accent-danger block"><span class="material-symbols-rounded">delete</span> Delete</a>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>    
                         </div>
                     </div>
                 </div>
