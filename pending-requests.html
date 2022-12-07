@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Registered Verified - Iloilo Doctor's College</title>
+    <title>Registrar Head | Pending Requests - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -176,7 +176,7 @@
                     <div class="side-menu-collapse">
                         <a href="search-student.html" class="collapse-item">Search Student</a>
                         <a href="officially-enrolled.html" class="collapse-item">Officially Enrolled</a>
-                        <a href="registrar-verified.html" class="collapse-item active">Registrar Verified</a>
+                        <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
                         <a href="enrollees.html" class="collapse-item">Enrollees</a>
                         <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
                         <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
@@ -188,7 +188,7 @@
                         <a href="student-login-setting.html" class="collapse-item">Student Login Setting</a>
                         <a href="tracks-and-strands.html" class="collapse-item">Tracks and Strands</a>
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
-                        <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
+                        <a href="pending-requests.html" class="collapse-item active">Pending Requests</a>
                         <a href="#" class="collapse-item">Granted Request</a>
                         <a href="#" class="collapse-item">Student Portal Settings</a>
                     </div>
@@ -269,59 +269,78 @@
                             <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Registrar Verified</span>
+                            <span class="bread-link" aria-current="page">Pending Requests</span>
                         </li>
                     </ol>
-                    <h4>Registrar Verified Students for 2020-2021(2nd)</h4>
+                    <h4>Student Pending Requests for Registrar Head</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <form action="">
-                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
-                                <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
-                                <div class="row g-3">
-                                    <div class="col-xl-3">  
+                        <div class="background-accent-success round py-4 px-4 d-flex align-items-start gap-3 shadow-sm">
+                            <div class="initial-circle-md circle background-color-success">
+                                <span class="material-symbols-rounded">lightbulb</span>
+                            </div>
+                            <div class="me-auto">
+                                <div class="font-size-20 font-weight-600">Tip!</div>
+                                <div class="font-size-14">Click the "Mark as Granted" button if the request was already given.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
+                            <form action="">
+                                <div class="row align-items-center justify-content-between g-3">
+                                    <div class="col-xl-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name">
+                                            <select class="form-control">
+                                                <option disabled selected>-- Filter By --</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3">  
+                                    <div class="col-xl-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Student ID">
+                                            <input type="search" class="form-control" placeholder="Keyword">
                                         </div>
                                     </div>
                                     <div class="col-xl-2">
                                         <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="table-responsive">
                             <table class="table table-bordered mb-0 background-color-card">
                                 <thead>
                                     <tr>
-                                        <th>Reference ID</th>
+                                        <th>Date</th>
                                         <th>Student ID</th>
-                                        <th>Name</th>
-                                        <th>Year</th>
-                                        <th>Course</th>
-                                        <th>Major</th>
-                                        <th>Type</th>
-                                        <th>Date Enrolled</th>
-                                        <th class="text-center">Action</th>
+                                        <th>Fullname</th>
+                                        <th>Request</th>
+                                        <th>Remark</th>
+                                        <th>Status</th>
+                                        <th>Department Remark</th>
+                                        <th class="text-center" width="20%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center" colspan="9">No data available</td>
+                                        <td>06/01/2020 07:29 AM</td>
+                                        <td>14-H-255</td>
+                                        <td>D oenel, Kyla Bianca</td>
+                                        <td>TOR</td>
+                                        <td>-</td>
+                                        <td>PENDING</td>
+                                        <td>-</td>
+                                        <td>
+                                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                                <a href="#" class="button-accent-success block"><span class="material-symbols-rounded">edit</span> Edit</a>
+                                                <a href="#" class="button-accent-danger block"><span class="material-symbols-rounded">delete</span> Delete</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>    
