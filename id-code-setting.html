@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Grading Period - Iloilo Doctor's College</title>
+    <title>Registrar Head | ID Code Settings - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -108,7 +108,7 @@
                         <a href="academic-year.html" class="collapse-item">Academic Year</a>
                         <a href="announcements.html" class="collapse-item">Announcements</a>
                         <a href="calendar.html" class="collapse-item">Calendar</a>
-                        <a href="grading-period.html" class="collapse-item active">Grading Period</a>
+                        <a href="grading-period.html" class="collapse-item">Grading Period</a>
                         <a href="open-semester.html" class="collapse-item">Open Semester</a>
                         <a href="semester.html" class="collapse-item">Semester</a>
                         <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
@@ -181,7 +181,7 @@
                         <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
                         <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
                         <a href="grading-system.html" class="collapse-item">Grading System</a>
-                        <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
+                        <a href="id-code-setting.html" class="collapse-item active">ID Code Setting</a>
                         <a href="#" class="collapse-item">Import Students</a>
                         <a href="#" class="collapse-item">Permit Setting</a>
                         <a href="#" class="collapse-item">Reset Student Password</a>
@@ -266,116 +266,54 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">School Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Grading Period</span>
+                            <span class="bread-link" aria-current="page">ID Code Setting</span>
                         </li>
                     </ol>
-                    <h4>Grading Period</h4>
+                    <h4>Student ID Code Management</h4>
                 </div>
 
-                <div class="row g-3 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="d-flex align-items-center justify-content-between gap-2">
-                            <a href="#" class="button-success"><span class="material-symbols-rounded">dataset</span> Set as Grading Period</a>
-                            <a href="#" class="button-primary"><span class="material-symbols-rounded">add</span> Add New Grading Period</a>
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Overall College ID Code</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="20-C-0011" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered background-color-card mb-0">
-                                <thead>
-                                    <tr>
-                                        <th width="12%">Use</th>
-                                        <th>Grading Period</th>
-                                        <th>Order</th>
-                                        <th>Status</th>
-                                        <th class="text-center" width="12%">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="prelim" checked>
-                                                <label class="form-check-label" for="prelim">Current</label>
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Generate Student ID</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option disabled selected>-- Select Program --</option>
+                                                </select>
                                             </div>
-                                        </td>
-                                        <td>Prelim</td>
-                                        <td>1</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="midterm">
-                                                <label class="form-check-label" for="midterm"></label>
-                                            </div>
-                                        </td>
-                                        <td>Midterm</td>
-                                        <td>2</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="finals">
-                                                <label class="form-check-label" for="finals"></label>
-                                            </div>
-                                        </td>
-                                        <td>Finals</td>
-                                        <td>4</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3 mt-3">Disabled Grading Periods</div>
-                        <div class="table-responsive">
-                            <table class="table table-bordered background-color-card mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Grading Period</th>
-                                        <th>Order</th>
-                                        <th>Status</th>
-                                        <th class="text-center" width="12%">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Pre-finals</td>
-                                        <td>3</td>
-                                        <td>Disabled</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-success"><span class="material-symbols-rounded">visibility</span> Enable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Generate</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
