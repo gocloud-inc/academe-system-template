@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Officially Enrolled - Iloilo Doctor's College</title>
+    <title>Registrar Head | Grading System - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -175,12 +175,12 @@
                     
                     <div class="side-menu-collapse">
                         <a href="search-student.html" class="collapse-item">Search Student</a>
-                        <a href="officially-enrolled.html" class="collapse-item active">Officially Enrolled</a>
+                        <a href="officially-enrolled.html" class="collapse-item">Officially Enrolled</a>
                         <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
                         <a href="enrollees.html" class="collapse-item">Enrollees</a>
                         <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
                         <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
-                        <a href="grading-system.html" class="collapse-item">Grading System</a>
+                        <a href="grading-system.html" class="collapse-item active">Grading System</a>
                         <a href="#" class="collapse-item">ID Code Setting</a>
                         <a href="#" class="collapse-item">Import Students</a>
                         <a href="#" class="collapse-item">Permit Setting</a>
@@ -269,82 +269,200 @@
                             <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Officially Enrolled</span>
+                            <span class="bread-link" aria-current="page">Grading System</span>
                         </li>
                     </ol>
-                    <h4>Officially Enrolled Students</h4>
+                    <h4>Grading System Setup</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <form action="">
-                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
-                                <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
-                                <div class="row g-3">
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name">
-                                        </div>
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Grade Input Schedule (Please set this every semester)</div>
+                                <form action="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered background-color-card">
+                                            <thead>
+                                                <tr>
+                                                    <th>Period</th>
+                                                    <th class="text-center" width="7%">Close</th>
+                                                    <th class="text-center" width="7%">Open</th>
+                                                    <th width="25%">Range From</th>
+                                                    <th width="25%">Range To</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Prelim</td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input class="form-check-input" type="radio" name="beed" id="beed">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input class="form-check-input" type="radio" name="beed" id="beed">
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="date" class="form-control" required>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="date" class="form-control" required>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Student ID">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2">
-                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
-                                    </div>
-                                </div>
+                                    <button type="submit" class="button-primary">Save Changes</button>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="col-xl-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered mb-0 background-color-card">
-                                <thead>
-                                    <tr>
-                                        <th>Student ID</th>
-                                        <th>Student name</th>
-                                        <th>Year</th>
-                                        <th>Program</th>
-                                        <th>Major</th>
-                                        <th>Date of Birth</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20-C-0011</td>
-                                        <td>Avila, Ronnel Dime</td>
-                                        <td>1st Year</td>
-                                        <td>Bachelor of Science in Information Technology</td>
-                                        <td>-</td>
-                                        <td>Feb-20-1999</td>
-                                        <td class="text-center">
-                                            <div class="dropdown">
-                                                <button type="button" role="button" class="button-accent-primary circle sm" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="material-symbols-rounded">more_horiz</span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">calendar_month</span> Course Schedule</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">table</span> Grades</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">demography</span> Official Fees</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">other_admission</span> Other Fees</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">receipt_long</span> Transcript</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">description</span> Clearance</a></li>
-                                                    <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">delete</span> Withdraw</a></li>
-                                                </ul>
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Passing Grade</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control" min="0" max="100" placeholder="0" value="75" required>
                                             </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>    
+                                        </div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Course Passing Grades</div>
+                                <form action="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered background-color-card">
+                                            <thead>
+                                                <tr>
+                                                    <th>Course Code</th>
+                                                    <th width="25%">Passing Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>BEED</td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" min="0" max="100" placeholder="0" value="75" required>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="submit" class="button-primary">Save Changes</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Grade Equivalent</div>
+                                <form action="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered background-color-card mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center" rowspan="2">Equivalent Grades</th>
+                                                    <th class="text-center" colspan="2">Percentage</th>
+                                                    <th class="text-center" rowspan="2">Remarks</th>
+                                                    <th class="text-center" width="8%" rowspan="2">Action</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-center">Range From</th>
+                                                    <th class="text-center">Range To</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" min="0" max="100" placeholder="0" value="75" disabled>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" min="0" max="100" placeholder="0" value="75" disabled>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" min="0" max="100" placeholder="0" value="75" disabled>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Remarks" value="Excellent" disabled>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="button-accent-primary circle"><span class="material-symbols-rounded">edit</span></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Grade Remarks</div>
+                                <form action="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered background-color-card">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Order</th>
+                                                    <th class="text-center" width="8%">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>INC</td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="0" value="Incomplete" required>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" min="0" placeholder="0" value="1" disabled>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="button-accent-danger circle"><span class="material-symbols-rounded">delete</span></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="submit" class="button-primary">Save Changes</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
