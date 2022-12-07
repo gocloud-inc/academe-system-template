@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Import Students - Iloilo Doctor's College</title>
+    <title>Registrar Head | Reset Student Password - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -182,10 +182,10 @@
                         <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
                         <a href="grading-system.html" class="collapse-item">Grading System</a>
                         <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
-                        <a href="import-students.html" class="collapse-item active">Import Students</a>
+                        <a href="import-students.html" class="collapse-item">Import Students</a>
                         <a href="permit-setting.html" class="collapse-item">Permit Setting</a>
                         <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
-                        <a href="student-login-setting.html" class="collapse-item">Student Login Setting</a>
+                        <a href="student-login-setting.html" class="collapse-item active">Student Login Setting</a>
                         <a href="#" class="collapse-item">Tracks and Strands</a>
                         <a href="#" class="collapse-item">Request Settings</a>
                         <a href="#" class="collapse-item">Pending Requests</a>
@@ -269,21 +269,129 @@
                             <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Import Students</span>
+                            <span class="bread-link" aria-current="page">Student Login Setting</span>
                         </li>
                     </ol>
-                    <h4>Import Students</h4>
+                    <h4>Configure Student Login Custom</h4>
                 </div>
 
-                <div class="row justify-content-center g-4 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-xl-6">
-                        <div class="card text-center p-4">
+                        <div class="card shadow-sm">
                             <div class="body">
-                                <div class="font-size-18 font-weight-600 mb-3">Click button to start importing</div>
-                                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eum expedita voluptates corporis doloribus dolorum magnam nesciunt voluptatem veritatis sint facilis officiis, doloremque, minima quae culpa? Ipsum similique magni quae!</p>
-                                <button type="button" class="button-primary"><span class="material-symbols-rounded">add</span> Create Import Session</button>
+                                <div class="row row-cols-1 g-3">
+                                    <div class="col">
+                                        <div class="d-flex align-items-center justify-content-between gap-2">
+                                            <div class="font-size-16 font-weight-500">Include Birthdate on Login</div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="switch1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center justify-content-between gap-2">
+                                            <div class="font-size-16 font-weight-500">Student with unsettled balance cannot login</div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="switch2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <form action="">
+                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
+                                <div class="font-size-18 font-weight-600">Access Portal Settings</div>
+                                <div class="font-size-14 mb-3">For Official Enrolled Students Only</div>
+                                <div class="row g-3">
+                                    <div class="col-xl-12">  
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="all">
+                                                <label class="form-check-label stretched-link" for="all">All</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="beced">
+                                                <label class="form-check-label stretched-link" for="beced">BECEd</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="beed">
+                                                <label class="form-check-label stretched-link" for="beed">BEED</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsa">
+                                                <label class="form-check-label stretched-link" for="bsa">BSA</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsba">
+                                                <label class="form-check-label stretched-link" for="bsba">BSBA</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bshrm">
+                                                <label class="form-check-label stretched-link" for="bshrm">BSHRM</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsit">
+                                                <label class="form-check-label stretched-link" for="bsit">BSIT</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="pec">
+                                                <label class="form-check-label stretched-link" for="pec">PEC</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">  
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="all">
+                                                <label class="form-check-label stretched-link" for="all">All</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="1st">
+                                                <label class="form-check-label stretched-link" for="1st">1st Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="2nd">
+                                                <label class="form-check-label stretched-link" for="2nd">2nd Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="3rd">
+                                                <label class="form-check-label stretched-link" for="3rd">3rd Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="4th">
+                                                <label class="form-check-label stretched-link" for="4th">4th Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bshrm">
+                                                <label class="form-check-label stretched-link" for="bshrm">BSHRM</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="pec">
+                                                <label class="form-check-label stretched-link" for="pec">PEC</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="enable" checked>
+                                                <label class="form-check-label" for="enable">Enable Access Portal</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="disable">
+                                                <label class="form-check-label" for="disable">Disable Access Portal</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <button type="submit" class="button-primary">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
