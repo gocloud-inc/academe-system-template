@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Open Semester - Iloilo Doctor's College</title>
+    <title>Registrar Head | Permit Setting - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -109,7 +109,7 @@
                         <a href="announcements.html" class="collapse-item">Announcements</a>
                         <a href="calendar.html" class="collapse-item">Calendar</a>
                         <a href="grading-period.html" class="collapse-item">Grading Period</a>
-                        <a href="open-semester.html" class="collapse-item active">Open Semester</a>
+                        <a href="open-semester.html" class="collapse-item">Open Semester</a>
                         <a href="semester.html" class="collapse-item">Semester</a>
                         <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
                         <a href="school-settings.html" class="collapse-item">School Settings</a>
@@ -183,7 +183,7 @@
                         <a href="grading-system.html" class="collapse-item">Grading System</a>
                         <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
                         <a href="import-students.html" class="collapse-item">Import Students</a>
-                        <a href="permit-setting.html" class="collapse-item">Permit Setting</a>
+                        <a href="permit-setting.html" class="collapse-item active">Permit Setting</a>
                         <a href="#" class="collapse-item">Reset Student Password</a>
                         <a href="#" class="collapse-item">Student Login Setting</a>
                         <a href="#" class="collapse-item">Tracks and Strands</a>
@@ -266,81 +266,33 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">School Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Open Semester</span>
+                            <span class="bread-link" aria-current="page">Permit Setting</span>
                         </li>
                     </ol>
-                    <h4>Open Semester</h4>
+                    <h4>Permit Setting</h4>
                 </div>
 
-                <div class="row g-3 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="background-accent-warning round py-4 px-4 d-flex align-items-start gap-3 shadow-sm">
-                            <div class="initial-circle-md circle background-color-warning">
-                                <span class="material-symbols-rounded">priority_high</span>
+                        <div class="card">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Title</div>
+                                <form action="">
+                                    <div class="row g-3">
+                                        <div class="col-xl-10">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="MIDTERM AND FINAL EXAMINATION PERMIT" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2">
+                                            <button type="submit" class="button-primary block">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="me-auto">
-                                <div class="font-size-20 font-weight-600">Note</div>
-                                <div class="font-size-14">Use is the Current Semester and School Year of the system. Checked from the option and click "Set as Current Semester" button to update. Enrollment can only be open and close in the current open semester. Changing open semester will close the enrollment in the previous.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="d-flex align-items-center justify-content-between gap-2">
-                            <a href="#" class="button-primary"><span class="material-symbols-rounded">add</span> New Open Semester</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered background-color-card mb-0">
-                                <thead>
-                                    <tr>
-                                        <th width="12%">Use</th>
-                                        <th>Academic Year</th>
-                                        <th>Semester</th>
-                                        <th>Is Enrollment Open?</th>
-                                        <th class="text-center" width="12%">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-highlighted">
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="prelim" checked>
-                                                <label class="form-check-label" for="prelim">Current</label>
-                                            </div>
-                                        </td>
-                                        <td>2021-2021</td>
-                                        <td>1st</td>
-                                        <td>Open</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">delete</span> Destroy</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="midterm">
-                                                <label class="form-check-label" for="midterm"></label>
-                                            </div>
-                                        </td>
-                                        <td>2020-2021</td>
-                                        <td>3rd Semester</td>
-                                        <td>Close</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">delete</span> Destroy</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
