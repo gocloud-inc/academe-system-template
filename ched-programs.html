@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Enrollment Settings - Iloilo Doctor's College</title>
+    <title>Registrar Head | CHED Programs - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -158,7 +158,7 @@
                     
                     <div class="side-menu-collapse">
                         <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
-                        <a href="enrollment-settings.html" class="collapse-item active">Enrollment Settings</a>
+                        <a href="enrollment-settings.html" class="collapse-item">Enrollment Settings</a>
                         <a href="block-sections.html" class="collapse-item">Block Sections</a>
                         <a href="course-schedules.html" class="collapse-item">Course Schedules</a>
                         <a href="rooms.html" class="collapse-item">Rooms</a>
@@ -190,7 +190,7 @@
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
                         <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
                         <a href="granted-requests.html" class="collapse-item">Granted Request</a>
-                        <a href="student-portal-settings.html" class="collapse-item">Student Portal Settings</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Portal Settings</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -203,7 +203,7 @@
                     </a>
                     
                     <div class="side-menu-collapse">
-                        <a href="ched-programs.html" class="collapse-item">CHED Pograms</a>
+                        <a href="ched-programs.html" class="collapse-item active">CHED Pograms</a>
                         <a href="#" class="collapse-item">Complete List of Enrollees</a>
                         <a href="#" class="collapse-item">Enrollment List</a>
                         <a href="#" class="collapse-item">NSTP Enrollment List</a>
@@ -266,130 +266,43 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Enrollment Section</a>
+                            <a href="#" class="bread-link" aria-current="page">CHED Reports</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Enrollment Settings</span>
+                            <span class="bread-link" aria-current="page">CHED Programs</span>
                         </li>
                     </ol>
-                    <h4>Enrollment Settings</h4>
+                    <h4>CHED Report</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Enrollment Portal Settings</div>
-                        <div class="card">
-                            <div class="body">
-                                <div class="row g-3">
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Send Email to Enrollee (Enrollment Information)</label>
-                                            <select class="form-control">
-                                                <option value="yes">Yes - Send Email</option>
-                                                <option value="no">No - Don't Send Email</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Send Email to Enrollee when tagged as officially enrolled.</label>
-                                            <select class="form-control">
-                                                <option value="yes">Yes - Send Email</option>
-                                                <option value="no">No - Don't Send Email</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Validate Student Issues (Old Enrollment)</label>
-                                            <select class="form-control">
-                                                <option value="yes">Not Allowed - Student With Unsettled Issues cannot Enroll</option>
-                                                <option value="no">Allowed - Student with Unsettled Issues cam Enroll</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Validate Previous Balance (Old Enrollment)</label>
-                                            <select class="form-control">
-                                                <option value="yes">Not Allowed - Student With Previous Balance cannot Enroll</option>
-                                                <option value="no">Allowed - Student with Previous Balance cam Enroll</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Google Drive Upload Link (Applicant Credentials)</label>
-                                            <input type="link" class="form-control" placeholder="Paste a link" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Enrollment Expiration (Minutes)</label>
-                                            <input type="number" class="form-control" min="0" placeholder="0" required>
-                                            <div class="form-text">Number of minutes to wait for the student's first payment upon registrar approval. If not received within the given minutes, the enrollment will be deleted.</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="form-group">
-                                            <label for="enrollment-info" class="form-label">Enrollment Bypass Prerequisite Subjects</label>
-                                            <select class="form-control">
-                                                <option value="yes">Yes</option>
-                                                <option value="no">No</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <button type="submit" class="button-primary">Save Changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3">Enrollment Schedules</div>
-                        <div class="card">
-                            <div class="body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Course</th>
-                                                <th class="text-center" width="7%">Close</th>
-                                                <th class="text-center" width="7%">Open</th>
-                                                <th width="25%">Enrollment Start</th>
-                                                <th width="25%">Enrollment End</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>BEED</td>
-                                                <td class="text-center">
-                                                    <div class="form-group">
-                                                        <input class="form-check-input" type="radio" name="beed" id="beed">
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="form-group">
-                                                        <input class="form-check-input" type="radio" name="beed" id="beed">
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="form-group">
-                                                        <input type="date" class="form-control" required>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="form-group">
-                                                        <input type="date" class="form-control" required>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <button type="submit" class="button-primary">Save Changes</button>
-                                </div>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th class="text-center" colspan="5">Year Level</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bachelor of Early Childhood Education</td>
+                                        <td class="text-center">1st Year</td>
+                                        <td class="text-center">2nd Year</td>
+                                        <td class="text-center">3rd Year</td>
+                                        <td class="text-center">4th Year</td>
+                                        <td class="text-center">PEC</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <button type="button" class="button-accent-primary block">PDF</button>
+                                                <button type="button" class="button-accent-success block">Excel</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
