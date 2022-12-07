@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Dashboard | Report Cards - Escuela de Sophia of Caloocan, Inc.</title>
+    <title>Registrar Head | Exam Permit Report - Iloilo Doctor's College</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../assets/logo-academe-sms.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -25,8 +25,8 @@
                 <button type="button" class="button-link-dark circle" id="sidebar-toggler">
                     <span class="material-symbols-rounded">menu</span>
                 </button>
-                <a href="registrar.html" class="d-flex align-items-center gap-2" id="school-logo">
-                    <img class="brand-logo" src="../../assets/logo/edsci-logo.png" alt="">
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
                     <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
                 </a>
                 <ul class="navmenu">
@@ -42,18 +42,26 @@
                             SY: 2022 - 2023
                         </a>
                     </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">notifications</span>
+                            Notification
+                        </a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="initial-circle-xs background-color-primary">R</div>
                             <div class="font-size-14 font-weight-600 nav-username">Registrar, Head Account</div>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="profile.html"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
-                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">star</span>What's New</a></li>
-                            <li><a class="dropdown-item" href="settings.html"><span class="material-symbols-rounded">settings</span>Settings</a></li>
-                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">contact_support</span>Contact Support</a></li>
-                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">admin_panel_settings</span>User Department</a></li>
-                            <li><a class="dropdown-item" href="src/auth/student-login.html"><span class="material-symbols-rounded">logout</span>Logout</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">star</span>News & Events</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">settings</span>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">contact_support</span>Submit Ticket</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">admin_panel_settings</span>Change Department</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">description</span>User Manual</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">logout</span>Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -75,13 +83,13 @@
                 </li>
                 <li class="side-item-header">Menu</li>
                 <li class="side-item">
-                    <a class="side-link" href="registrar.html">
+                    <a class="side-link" href="index.html">
                         <span class="material-symbols-rounded">dashboard</span>
                         <span class="side-text">Dashboard</span>
                     </a>
                 </li>
                 <li class="side-item" data-badge="9+">
-                    <a class="side-link" href="dashboard.html">
+                    <a class="side-link" href="#">
                         <span class="material-symbols-rounded">mail</span>
                         <span class="side-text">Messages</span>
                     </a>
@@ -97,17 +105,70 @@
                     </a>
                     
                     <div class="side-menu-collapse">
+                        <a href="academic-year.html" class="collapse-item">Academic Year</a>
+                        <a href="announcements.html" class="collapse-item">Announcements</a>
+                        <a href="calendar.html" class="collapse-item">Calendar</a>
+                        <a href="grading-period.html" class="collapse-item">Grading Period</a>
+                        <a href="open-semester.html" class="collapse-item">Open Semester</a>
+                        <a href="semester.html" class="collapse-item">Semester</a>
+                        <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
                         <a href="school-settings.html" class="collapse-item">School Settings</a>
-                        <a href="school-department-heads.html" class="collapse-item">Department Heads</a>
-                        <a href="admission-settings.html" class="collapse-item">Admissions</a>
-                        <a href="enrollment-settings.html" class="collapse-item">Enrollment</a>
                     </div>
                 </li>
                 <li class="side-item">
                     <a class="side-link has-children" href="#">
                         <div class="me-auto d-flex align-items-center gap-2">
                             <span class="material-symbols-rounded">badge</span>
-                            <span class="side-text">Student Section</span>
+                            <span class="side-text">Program</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="program-category.html" class="collapse-item">Program Category</a>
+                        <a href="year-levels.html" class="collapse-item">Year Levels</a>
+                        <a href="programs.html" class="collapse-item">Programs</a>
+                        <a href="curriculum.html" class="collapse-item">Curriculum</a>
+                        <a href="program-department.html" class="collapse-item">Program Departments</a>
+                        <a href="master-courses.html" class="collapse-item">Master Courses</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">manage_accounts</span>
+                            <span class="side-text">Admission</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="open-admission.html" class="collapse-item">Open Admission</a>
+                        <a href="applicants.html" class="collapse-item">Applicants</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">summarize</span>
+                            <span class="side-text">Enrollment</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
+                        <a href="enrollment-settings.html" class="collapse-item">Enrollment Settings</a>
+                        <a href="block-sections.html" class="collapse-item">Block Sections</a>
+                        <a href="course-schedules.html" class="collapse-item">Course Schedules</a>
+                        <a href="rooms.html" class="collapse-item">Rooms</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">wb_incandescent</span>
+                            <span class="side-text">Student</span>
                         </div>
                         <span class="material-symbols-rounded">expand_more</span>
                     </a>
@@ -115,103 +176,65 @@
                     <div class="side-menu-collapse">
                         <a href="search-student.html" class="collapse-item">Search Student</a>
                         <a href="officially-enrolled.html" class="collapse-item">Officially Enrolled</a>
-                        <a href="registrar-verified-students.html" class="collapse-item">Registrar Verified</a>
+                        <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
                         <a href="enrollees.html" class="collapse-item">Enrollees</a>
-                        <a href="applicants.html" class="collapse-item">Applicants</a>
-                        <a href="forms.html" class="collapse-item">Unfinished Enrollment</a>
-                        <a href="no-section-students.html" class="collapse-item">Students with no Section</a>
-                        <a href="assign-students-sections.html" class="collapse-item">Assign Students to Section</a>
-                        <a href="tables.html" class="collapse-item">View Profile</a>
-                        <a href="students-bin.html" class="collapse-item">Students Bin</a>
-                    </div>
-                </li>
-                <li class="side-item">
-                    <a class="side-link has-children" href="#">
-                        <div class="me-auto d-flex align-items-center gap-2">
-                            <span class="material-symbols-rounded">manage_accounts</span>
-                            <span class="side-text">Student Management</span>
-                        </div>
-                        <span class="material-symbols-rounded">expand_more</span>
-                    </a>
-                    
-                    <div class="side-menu-collapse">
-                        <a href="migrate-students.html" class="collapse-item">Migrate Students</a>
-                        <a href="alerts.html" class="collapse-item">Upload Student</a>
-                        <a href="access-portal-settings.html" class="collapse-item">Access Portal Settings</a>
-                    </div>
-                </li>
-                <li class="side-item">
-                    <a class="side-link has-children" href="#">
-                        <div class="me-auto d-flex align-items-center gap-2">
-                            <span class="material-symbols-rounded">summarize</span>
-                            <span class="side-text">Reports & Record</span>
-                        </div>
-                        <span class="material-symbols-rounded">expand_more</span>
-                    </a>
-                    
-                    <div class="side-menu-collapse">
-                        <a href="report-on-promotions.html" class="collapse-item">Report on Promotions</a>
-                        <a href="cor-bath-print.html" class="collapse-item">COR Batch Print</a>
-                        <a href="report-cards.html" class="collapse-item active">Report Cards</a>
-                        <a href="printables.html" class="collapse-item">Printables</a>
-                        <a href="download-student-profile.html" class="collapse-item">Download Student Profiles</a>
-                    </div>
-                </li>
-                <li class="side-item">
-                    <a class="side-link has-children" href="#">
-                        <div class="me-auto d-flex align-items-center gap-2">
-                            <span class="material-symbols-rounded">wb_incandescent</span>
-                            <span class="side-text">Basic Education</span>
-                        </div>
-                        <span class="material-symbols-rounded">expand_more</span>
-                    </a>
-                    
-                    <div class="side-menu-collapse">
-                        <a href="subjects.html" class="collapse-item">Subjects</a>
-                        <a href="curriculum.html" class="collapse-item">Curriculum (Grade Level Subjects)</a>
+                        <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
+                        <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
+                        <a href="grading-system.html" class="collapse-item">Grading System</a>
+                        <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
+                        <a href="import-students.html" class="collapse-item">Import Students</a>
+                        <a href="permit-setting.html" class="collapse-item">Permit Setting</a>
+                        <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Login Setting</a>
                         <a href="tracks-and-strands.html" class="collapse-item">Tracks and Strands</a>
-                        <a href="cards.html" class="collapse-item">Rooms</a>
-                        <a href="sections.html" class="collapse-item">Sections</a>
-                        <a href="grade-level.html" class="collapse-item">Grade Level</a>
-                        <a href="progress-report-settings.html" class="collapse-item">Progress Report Settings</a>
-                        <a href="migrate-curriculum-subjects.html" class="collapse-item">Migrate Curriculum Subjects</a>
-                        <a href="grading-formats.html" class="collapse-item">Grading Formats</a>
+                        <a href="request-settings.html" class="collapse-item">Request Settings</a>
+                        <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
+                        <a href="granted-requests.html" class="collapse-item">Granted Request</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Portal Settings</a>
                     </div>
                 </li>
                 <li class="side-item">
                     <a class="side-link has-children" href="#">
                         <div class="me-auto d-flex align-items-center gap-2">
                             <span class="material-symbols-rounded">category</span>
-                            <span class="side-text">Categories</span>
+                            <span class="side-text">CHED Reports</span>
                         </div>
                         <span class="material-symbols-rounded">expand_more</span>
                     </a>
                     
                     <div class="side-menu-collapse">
-                        <a href="#" class="collapse-item">Enrollment Summary</a>
-                        <a href="alerts.html" class="collapse-item">Section Summary</a>
-                        <a href="avatars.html" class="collapse-item">Masterlist's (Section)</a>
-                        <a href="avatars.html" class="collapse-item">Masterlist's (Grade Level)</a>
+                        <a href="ched-programs.html" class="collapse-item">CHED Pograms</a>
+                        <a href="complete-list-of-enrollees.html" class="collapse-item">Complete List of Enrollees</a>
+                        <a href="enrollment-lists.html" class="collapse-item">Enrollment List</a>
+                        <a href="nstp-enrollment-lists.html" class="collapse-item">NSTP Enrollment List</a>
+                        <a href="report-on-promotions.html" class="collapse-item">Report On Promotions</a>
+                        <a href="summary-of-enrollment.html" class="collapse-item">Summary of Enrollment</a>
                     </div>
                 </li>
-                <li class="side-item-header">Activities</li>
                 <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
-                        <span class="material-symbols-rounded">star_half</span>
-                        <span class="side-text">Academic</span>
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">receipt_long</span>
+                            <span class="side-text">Reports and Records</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
                     </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
-                        <span class="material-symbols-rounded">school</span>
-                        <span class="side-text">School</span>
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link" href="dashboard.html">
-                        <span class="material-symbols-rounded">event_seat</span>
-                        <span class="side-text">Section</span>
-                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="classlist-report.html" class="collapse-item">Classlist Report</a>
+                        <a href="download-student-profile.html" class="collapse-item">Download Student Profile</a>
+                        <a href="enrollment-list-by-student-type.html" class="collapse-item">Enrollment List By Student Type</a>
+                        <a href="exam-permit-report.html" class="collapse-item active">Exam Permit Report</a>
+                        <a href="gwa-reports.html" class="collapse-item">GWA Reports</a>
+                        <a href="list-of-transferees.html" class="collapse-item">List of Transferees</a>
+                        <a href="master-list-by-course.html" class="collapse-item">Masterlist By Course</a>
+                        <a href="master-list-by-course-enrollee.html" class="collapse-item">Masterlist By Course Enrollee</a>
+                        <a href="student-directories.html" class="collapse-item">Student Directories</a>
+                        <a href="summary-of-grades.html" class="collapse-item">Summary of Grades</a>
+                        <a href="students-with-promisory-note.html" class="collapse-item">Students with Promisory Note</a>
+                        <a href="students-bin.html" class="collapse-item">Student Bin</a>
+                        <a href="withdrawn-students.html" class="collapse-item">Withdrawn Students</a>
+                    </div>
                 </li>
                 <li class="side-item-header">Settings</li>
                 <li class="side-item">
@@ -240,40 +263,39 @@
                 <div class="bread">
                     <ol class="bread-menu">
                         <li class="bread-item">
-                            <a href="registrar.html" class="bread-link">Dashboard</a>
+                            <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Reports & Records Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Reports and Records</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Report Cards</span>
+                            <span class="bread-link" aria-current="page">Exam Permit Report</span>
                         </li>
                     </ol>
-                    <h4>Report Cards</h4>
+                    <h4>Exam Permit Report</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-2 background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">Kinder 1</div>
-                        <div class="table-reponsive">
+                        <div class="background-color-card py-3 px-3 mb-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600">BECEd</div>
+                        </div>
+                        <div class="table-responsive">
                             <table class="table table-bordered background-color-card">
                                 <thead>
                                     <tr>
                                         <th>Student ID</th>
-                                        <th>Section Name</th>
-                                        <th class="text-center">Gender</th>
-                                    </tr>
-                                    <tr class="background-accent-primary">
-                                        <th colspan="3">MT. MAYON (BLOCK A)</th>
+                                        <th>Student Name</th>
+                                        <th>Major</th>
+                                        <th>Permit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr class="table-highlighted">
+                                        <td colspan="4">1st Year</td>
+                                    </tr>
                                     <tr>
-                                        <td>20-001679</td>
-                                        <td>
-                                            <a href="#">Alejandro, Bea Kristelle Mendoza</a>
-                                        </td>
-                                        <td>Female</td>
+                                        <td class="text-center" colspan="4">No data available</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -288,7 +310,7 @@
         <span class="material-symbols-rounded theme-icon-switcher">light_mode</span>
     </button>
     
-    <script src="../../js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/scripts.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

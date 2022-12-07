@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Generate Grade Slip - Iloilo Doctor's College</title>
+    <title>Registrar Head | GWA Reports - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -179,7 +179,7 @@
                         <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
                         <a href="enrollees.html" class="collapse-item">Enrollees</a>
                         <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
-                        <a href="generate-grade-slip.html" class="collapse-item active">Generate Grade Slip</a>
+                        <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
                         <a href="grading-system.html" class="collapse-item">Grading System</a>
                         <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
                         <a href="import-students.html" class="collapse-item">Import Students</a>
@@ -190,7 +190,7 @@
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
                         <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
                         <a href="granted-requests.html" class="collapse-item">Granted Request</a>
-                        <a href="student-portal-settings.html" class="collapse-item">Student Portal Settings</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Portal Settings</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -225,7 +225,7 @@
                         <a href="download-student-profile.html" class="collapse-item">Download Student Profile</a>
                         <a href="enrollment-list-by-student-type.html" class="collapse-item">Enrollment List By Student Type</a>
                         <a href="exam-permit-report.html" class="collapse-item">Exam Permit Report</a>
-                        <a href="gwa-reports.html" class="collapse-item">GWA Reports</a>
+                        <a href="gwa-reports.html" class="collapse-item active">GWA Reports</a>
                         <a href="list-of-transferees.html" class="collapse-item">List of Transferees</a>
                         <a href="master-list-by-course.html" class="collapse-item">Masterlist By Course</a>
                         <a href="master-list-by-course-enrollee.html" class="collapse-item">Masterlist By Course Enrollee</a>
@@ -266,123 +266,39 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">Student Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Reports and Records</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Generate Grade Slip</span>
+                            <span class="bread-link" aria-current="page">GWA Reports</span>
                         </li>
                     </ol>
-                    <h4>Generate Grade Slip</h4>
+                    <h4>GWA Reports</h4>
                 </div>
 
                 <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <form action="">
-                            <div class="card">
-                                <div class="body">
-                                    <div class="row g-3">
-                                        <div class="col-xl-3">
-                                            <div class="form-group">
-                                                <label for="year-level" class="form-label">Select Year Level</label>
-                                                <select class="form-control">
-                                                    <option value="1">First Year</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3">
-                                            <div class="form-group">
-                                                <label for="year-level" class="form-label">Select Semester</label>
-                                                <select class="form-control">
-                                                    <option value="1">2nd</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3">
-                                            <div class="form-group">
-                                                <label for="year-level" class="form-label">Select Course</label>
-                                                <select class="form-control">
-                                                    <option value="1">Bachelor of Elementary Education</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3">
-                                            <div class="form-group">
-                                                <label for="year-level" class="form-label">Select Report Type</label>
-                                                <select class="form-control">
-                                                    <option value="1">PDF</option>
-                                                    <option value="1">Excel</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <button type="submit" class="button-primary">Generate Grade Slip</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-12">
-                        <form action="">
-                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
-                                <div class="font-size-18 font-weight-600 mb-3">Filter Data</div>
-                                <div class="row g-3">
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2">  
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Student ID">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2">  
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <form action="">
+                                <div class="row align-items-center justify-content-between g-3">
+                                    <div class="col-xl-5">
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option value="all">All</option>
+                                                <option disabled selected>-- Select Course --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- Select Year Level --</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-xl-2">
-                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
+                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">download</span> Download</button>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="table-responsive">
-                            <table class="table table-bordered mb-0 background-color-card">
-                                <thead>
-                                    <tr>
-                                        <th>Student ID</th>
-                                        <th width="25%">Name</th>
-                                        <th>Year</th>
-                                        <th>Course</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20-C-0011</td>
-                                        <td>Avila, Ronnel Dime</td>
-                                        <td>1st Year</td>
-                                        <td>Bachelor of Science in Information Technology</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <a href="#" class="button-secondary block"><span class="material-symbols-rounded">print</span> Print</a>
-                                                <a href="#" class="button-secondary block"><span class="material-symbols-rounded">download</span> Download Excel</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>    
+                            </form>
                         </div>
                     </div>
                 </div>
