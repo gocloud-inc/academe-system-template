@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Calendar - Iloilo Doctor's College</title>
+    <title>Registrar Head | Student Portal Settings - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -17,8 +17,6 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <!-- Calendar -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.2/main.min.css" integrity="sha256-5veQuRbWaECuYxwap/IOE/DAwNxgm4ikX7nrgsqYp88=" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
@@ -109,7 +107,7 @@
                     <div class="side-menu-collapse">
                         <a href="academic-year.html" class="collapse-item">Academic Year</a>
                         <a href="announcements.html" class="collapse-item">Announcements</a>
-                        <a href="calendar.html" class="collapse-item active">Calendar</a>
+                        <a href="calendar.html" class="collapse-item">Calendar</a>
                         <a href="grading-period.html" class="collapse-item">Grading Period</a>
                         <a href="open-semester.html" class="collapse-item">Open Semester</a>
                         <a href="semester.html" class="collapse-item">Semester</a>
@@ -192,7 +190,7 @@
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
                         <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
                         <a href="granted-requests.html" class="collapse-item">Granted Request</a>
-                        <a href="student-portal-settings.html" class="collapse-item">Student Portal Settings</a>
+                        <a href="student-login-setting.html" class="collapse-item active">Student Portal Settings</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -268,18 +266,206 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">School Section</a>
+                            <a href="#" class="bread-link" aria-current="page">Student Section</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Calendar</span>
+                            <span class="bread-link" aria-current="page">Student Portal Settings</span>
                         </li>
                     </ol>
-                    <h4>Events Calendar</h4>
+                    <h4>Student Portal Update Profile Settings</h4>
                 </div>
 
-                <div class="row g-3 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="background-color-card px-3 py-3 shadow-sm rounded-3" id="calendar"></div>
+                        <div class="card shadow-sm">
+                            <div class="body">
+                                <div class="font-size-18 font-weight-600 mb-3">Master Switch</div>
+                                <div class="row align-items-center g-3">
+                                    <div class="col-xl-10">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="switch1">
+                                            </div>
+                                            <div class="font-size-16 font-weight-500">Enable / Disable Student Portal Edit Profile</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <button type="submit" class="button-primary block">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <form action="">
+                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
+                                <div class="font-size-18 font-weight-600 mb-3">Enable / Disable By Program or Level</div>
+                                <div class="row g-3">
+                                    <div class="col-xl-6">  
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="all">
+                                                <label class="form-check-label stretched-link" for="all">All</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="beced">
+                                                <label class="form-check-label stretched-link" for="beced">BECEd</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="beed">
+                                                <label class="form-check-label stretched-link" for="beed">BEED</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsa">
+                                                <label class="form-check-label stretched-link" for="bsa">BSA</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsba">
+                                                <label class="form-check-label stretched-link" for="bsba">BSBA</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bshrm">
+                                                <label class="form-check-label stretched-link" for="bshrm">BSHRM</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bsit">
+                                                <label class="form-check-label stretched-link" for="bsit">BSIT</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="pec">
+                                                <label class="form-check-label stretched-link" for="pec">PEC</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6">  
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="all">
+                                                <label class="form-check-label stretched-link" for="all">All</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="1st">
+                                                <label class="form-check-label stretched-link" for="1st">1st Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="2nd">
+                                                <label class="form-check-label stretched-link" for="2nd">2nd Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="3rd">
+                                                <label class="form-check-label stretched-link" for="3rd">3rd Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="4th">
+                                                <label class="form-check-label stretched-link" for="4th">4th Year</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="bshrm">
+                                                <label class="form-check-label stretched-link" for="bshrm">BSHRM</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="checkbox" value="" id="pec">
+                                                <label class="form-check-label stretched-link" for="pec">PEC</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="enable" checked>
+                                                <label class="form-check-label" for="enable">Enable Profile Update</label>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center gap-3 py-2 px-3">
+                                                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="disable">
+                                                <label class="form-check-label" for="disable">Disable Profile Update</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <button type="submit" class="button-primary">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <div class="font-size-18 font-weight-600 mb-3">Enable / Disable By Student</div>
+                            <form action="">
+                                <div class="row align-items-center justify-content-between g-3">
+                                    <div class="col-xl-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Student ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- All Year --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- All Program --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option disabled selected>-- Default --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered background-color-card">
+                                <thead>
+                                    <tr>
+                                        <th>Allow Edit Profile?</th>
+                                        <th>Student ID</th>
+                                        <th>Name</th>
+                                        <th>Year</th>
+                                        <th>Program</th>
+                                        <th>Major</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="1">
+                                                <label class="form-check-label stretched-link" for="1">Allow</label>
+                                            </div>
+                                        </td>
+                                        <td>20-C-0011</td>
+                                        <td>Avila, Ronnel Dime</td>
+                                        <td>1st Year</td>
+                                        <td>Bachelor of Science in Information Technology</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -292,19 +478,5 @@
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.2/main.min.js" integrity="sha256-sR+oJaZ3c0FHR6+kKaX1zeXReUGbzuNI8QTKpGHE0sg=" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                headerToolbar: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                },
-            });
-            calendar.render();
-        });
-    </script>
 </body>
 </html>
