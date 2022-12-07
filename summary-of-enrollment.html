@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Head | Grading Period - Iloilo Doctor's College</title>
+    <title>Registrar Head | Summary of Enrollment - Iloilo Doctor's College</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
     <!-- Fonts -->
@@ -108,7 +108,7 @@
                         <a href="academic-year.html" class="collapse-item">Academic Year</a>
                         <a href="announcements.html" class="collapse-item">Announcements</a>
                         <a href="calendar.html" class="collapse-item">Calendar</a>
-                        <a href="grading-period.html" class="collapse-item active">Grading Period</a>
+                        <a href="grading-period.html" class="collapse-item">Grading Period</a>
                         <a href="open-semester.html" class="collapse-item">Open Semester</a>
                         <a href="semester.html" class="collapse-item">Semester</a>
                         <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
@@ -190,7 +190,7 @@
                         <a href="request-settings.html" class="collapse-item">Request Settings</a>
                         <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
                         <a href="granted-requests.html" class="collapse-item">Granted Request</a>
-                        <a href="student-portal-settings.html" class="collapse-item">Student Portal Settings</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Portal Settings</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -208,7 +208,7 @@
                         <a href="enrollment-lists.html" class="collapse-item">Enrollment List</a>
                         <a href="nstp-enrollment-lists.html" class="collapse-item">NSTP Enrollment List</a>
                         <a href="report-on-promotions.html" class="collapse-item">Report On Promotions</a>
-                        <a href="summary-of-enrollment.html" class="collapse-item">Summary of Enrollment</a>
+                        <a href="summary-of-enrollment.html" class="collapse-item active">Summary of Enrollment</a>
                     </div>
                 </li>
                 <li class="side-item">
@@ -266,121 +266,223 @@
                             <a href="#" class="bread-link">Dashboard</a>
                         </li>
                         <li class="bread-item">
-                            <a href="#" class="bread-link" aria-current="page">School Section</a>
+                            <a href="#" class="bread-link" aria-current="page">CHED Reports</a>
                         </li>
                         <li class="bread-item">
-                            <span class="bread-link" aria-current="page">Grading Period</span>
+                            <span class="bread-link" aria-current="page">Summary of Enrollment</span>
                         </li>
                     </ol>
-                    <h4>Grading Period</h4>
+                    <h4>Summary of Enrollment</h4>
                 </div>
 
-                <div class="row g-3 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-xl-12">
-                        <div class="d-flex align-items-center justify-content-between gap-2">
-                            <a href="#" class="button-success"><span class="material-symbols-rounded">dataset</span> Set as Grading Period</a>
-                            <a href="#" class="button-primary"><span class="material-symbols-rounded">add</span> Add New Grading Period</a>
+                        <div class="background-color-card py-3 px-3 rounded-3 shadow-sm sticky-top">
+                            <div class="row align-items-center justify-content-between g-3">
+                                <div class="col-xl-2">
+                                    <button type="submit" class="button-success block"><span class="material-symbols-rounded">download</span> Download Excel</button>
+                                </div>
+                                <div class="col-xl-2">
+                                    <button type="button" class="button-secondary block" data-bs-toggle="modal" data-bs-target="#fullscreenSummary"><span class="material-symbols-rounded">fullscreen</span> Fullscreen</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="table-responsive">
-                            <table class="table table-bordered background-color-card mb-0">
+                            <table class="table table-bordered background-color-card">
                                 <thead>
                                     <tr>
-                                        <th width="12%">Use</th>
-                                        <th>Grading Period</th>
-                                        <th>Order</th>
-                                        <th>Status</th>
-                                        <th class="text-center" width="12%">Action</th>
+                                        <th class="text-center" rowspan="3">Course</th>
+                                        <th class="text-center" rowspan="3">Major/Area of Specialization</th>
+                                        <th class="text-center" colspan="15">Curriculum Year</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" colspan="3">1st Year</th>
+                                        <th class="text-center" colspan="3">3nd Year</th>
+                                        <th class="text-center" colspan="3">3rd Year</th>
+                                        <th class="text-center" colspan="3">4th Year</th>
+                                        <th class="text-center" colspan="3">PEC</th>
+                                        <th class="text-center" colspan="3">Grand Total</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="fst-italic">Male</th>
+                                        <th class="fst-italic">Female</th>
+                                        <th class="fst-italic">Total</th>
+                                        <th class="fst-italic">Male</th>
+                                        <th class="fst-italic">Female</th>
+                                        <th class="fst-italic">Total</th>
+                                        <th class="fst-italic">Male</th>
+                                        <th class="fst-italic">Female</th>
+                                        <th class="fst-italic">Total</th>
+                                        <th class="fst-italic">Male</th>
+                                        <th class="fst-italic">Female</th>
+                                        <th class="fst-italic">Total</th>
+                                        <th class="fst-italic">Male</th>
+                                        <th class="fst-italic">Female</th>
+                                        <th class="fst-italic">Total</th>
+                                        <th class="fst-italic" rowspan="1">Male</th>
+                                        <th class="fst-italic" rowspan="1">Female</th>
+                                        <th class="fst-italic" rowspan="1">Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="prelim" checked>
-                                                <label class="form-check-label" for="prelim">Current</label>
-                                            </div>
-                                        </td>
-                                        <td>Prelim</td>
-                                        <td>1</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="midterm">
-                                                <label class="form-check-label" for="midterm"></label>
-                                            </div>
-                                        </td>
-                                        <td>Midterm</td>
-                                        <td>2</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check d-flex align-content-center gap-2">
-                                                <input class="form-check-input" type="radio" id="finals">
-                                                <label class="form-check-label" for="finals"></label>
-                                            </div>
-                                        </td>
-                                        <td>Finals</td>
-                                        <td>4</td>
-                                        <td>Active</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-danger"><span class="material-symbols-rounded">visibility_off</span> Disable</button>
-                                            </div>
-                                        </td>
+                                        <td>BEED</td>
+                                        <td>-</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
                                     </tr>
                                 </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="font-size-18 font-weight-600 mb-3 mt-3">Disabled Grading Periods</div>
-                        <div class="table-responsive">
-                            <table class="table table-bordered background-color-card mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Grading Period</th>
-                                        <th>Order</th>
-                                        <th>Status</th>
-                                        <th class="text-center" width="12%">Action</th>
+                                <tfoot>
+                                    <tr class="background-accent-dark">
+                                        <td class="font-weight-600 text-end" colspan="2">Total</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
+                                        <td class="text-center font-weight-600">0</td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Pre-finals</td>
-                                        <td>3</td>
-                                        <td>Disabled</td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button type="button" class="button-secondary"><span class="material-symbols-rounded">edit</span> Edit</button>
-                                                <button type="button" class="button-accent-success"><span class="material-symbols-rounded">visibility</span> Enable</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                </tfoot>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="fullscreenSummary" tabindex="-1" aria-labelledby="fullscreenSummaryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="fullscreenSummaryLabel">Summary of Enrollment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered background-color-card">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" rowspan="3">Course</th>
+                                    <th class="text-center" rowspan="3">Major/Area of Specialization</th>
+                                    <th class="text-center" colspan="15">Curriculum Year</th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" colspan="3">1st Year</th>
+                                    <th class="text-center" colspan="3">3nd Year</th>
+                                    <th class="text-center" colspan="3">3rd Year</th>
+                                    <th class="text-center" colspan="3">4th Year</th>
+                                    <th class="text-center" colspan="3">PEC</th>
+                                    <th class="text-center" colspan="3">Grand Total</th>
+                                </tr>
+                                <tr>
+                                    <th class="fst-italic">Male</th>
+                                    <th class="fst-italic">Female</th>
+                                    <th class="fst-italic">Total</th>
+                                    <th class="fst-italic">Male</th>
+                                    <th class="fst-italic">Female</th>
+                                    <th class="fst-italic">Total</th>
+                                    <th class="fst-italic">Male</th>
+                                    <th class="fst-italic">Female</th>
+                                    <th class="fst-italic">Total</th>
+                                    <th class="fst-italic">Male</th>
+                                    <th class="fst-italic">Female</th>
+                                    <th class="fst-italic">Total</th>
+                                    <th class="fst-italic">Male</th>
+                                    <th class="fst-italic">Female</th>
+                                    <th class="fst-italic">Total</th>
+                                    <th class="fst-italic" rowspan="1">Male</th>
+                                    <th class="fst-italic" rowspan="1">Female</th>
+                                    <th class="fst-italic" rowspan="1">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BEED</td>
+                                    <td>-</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                    <td class="text-center">0</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="background-accent-dark">
+                                    <td class="font-weight-600 text-end" colspan="2">Total</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                    <td class="text-center font-weight-600">0</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="button-success">Download Excel</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <button type="button" class="button-secondary circle md shadow-sm position-fixed bottom-0 right-0 my-5 mx-5 theme-btn-switcher">
