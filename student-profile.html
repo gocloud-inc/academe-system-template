@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Head | Student Profile - Iloilo Doctor's College</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <button type="button" class="button-link-dark circle" id="sidebar-toggler">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+                <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <img class="brand-logo" src="assets/logo/edsci-logo.png" alt="">
+                    <div class="font-size-16 font-weight-600">Escuela de Sophia of Caloocan, Inc.</div>
+                </a>
+                <ul class="navmenu">
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">flag</span>
+                            First Quarter
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">today</span>
+                            SY: 2022 - 2023 
+                        </a>
+                    </li>
+                    <li class="nav-item nav-sm-none">
+                        <a class="button-link-dark">
+                            <span class="material-symbols-rounded font-size-20">notifications</span>
+                            Notification
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="initial-circle-xs background-color-primary">R</div>
+                            <div class="font-size-14 font-weight-600 nav-username">Registrar, Head Account</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">account_circle</span> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">star</span>News & Events</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">settings</span>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">contact_support</span>Submit Ticket</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">admin_panel_settings</span>Change Department</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">description</span>User Manual</a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">logout</span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <ul class="side-menu">
+                <li class="side-item">
+                    <div class="d-flex align-items-center background-accent-primary rounded-4 gap-3 py-2 px-3">
+                        <div class="initial-circle-sm rounded-4 background-accent-primary">
+                            <span class="material-symbols-rounded">person</span>
+                        </div>
+                        <div class="me-auto">
+                            <div class="font-size-14 font-weight-600">Registrar Head</div>
+                            <div class="font-size-12">User Account</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="side-item-header">Menu</li>
+                <li class="side-item">
+                    <a class="side-link" href="index.html">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="side-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-item" data-badge="9+">
+                    <a class="side-link" href="#">
+                        <span class="material-symbols-rounded">mail</span>
+                        <span class="side-text">Messages</span>
+                    </a>
+                </li>
+                <li class="side-item-header">Sections</li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">school</span>
+                            <span class="side-text">School</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="academic-year.html" class="collapse-item">Academic Year</a>
+                        <a href="announcements.html" class="collapse-item">Announcements</a>
+                        <a href="calendar.html" class="collapse-item">Calendar</a>
+                        <a href="grading-period.html" class="collapse-item">Grading Period</a>
+                        <a href="open-semester.html" class="collapse-item">Open Semester</a>
+                        <a href="semester.html" class="collapse-item">Semester</a>
+                        <a href="system-custom-message.html" class="collapse-item">System Custom Message</a>
+                        <a href="school-settings.html" class="collapse-item">School Settings</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">badge</span>
+                            <span class="side-text">Program</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="program-category.html" class="collapse-item">Program Category</a>
+                        <a href="year-levels.html" class="collapse-item">Year Levels</a>
+                        <a href="programs.html" class="collapse-item">Programs</a>
+                        <a href="curriculum.html" class="collapse-item">Curriculum</a>
+                        <a href="program-department.html" class="collapse-item">Program Departments</a>
+                        <a href="master-courses.html" class="collapse-item">Master Courses</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">manage_accounts</span>
+                            <span class="side-text">Admission</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="open-admission.html" class="collapse-item">Open Admission</a>
+                        <a href="applicants.html" class="collapse-item">Applicants</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">summarize</span>
+                            <span class="side-text">Enrollment</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="open-enrollment.html" class="collapse-item">Open Enrollment</a>
+                        <a href="enrollment-settings.html" class="collapse-item">Enrollment Settings</a>
+                        <a href="block-sections.html" class="collapse-item">Block Sections</a>
+                        <a href="course-schedules.html" class="collapse-item">Course Schedules</a>
+                        <a href="rooms.html" class="collapse-item">Rooms</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">wb_incandescent</span>
+                            <span class="side-text">Student</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="search-student.html" class="collapse-item">Search Student</a>
+                        <a href="officially-enrolled.html" class="collapse-item">Officially Enrolled</a>
+                        <a href="registrar-verified.html" class="collapse-item">Registrar Verified</a>
+                        <a href="enrollees.html" class="collapse-item">Enrollees</a>
+                        <a href="credential-masterlist.html" class="collapse-item">Credential Masterlist</a>
+                        <a href="generate-grade-slip.html" class="collapse-item">Generate Grade Slip</a>
+                        <a href="grading-system.html" class="collapse-item">Grading System</a>
+                        <a href="id-code-setting.html" class="collapse-item">ID Code Setting</a>
+                        <a href="import-students.html" class="collapse-item">Import Students</a>
+                        <a href="permit-setting.html" class="collapse-item">Permit Setting</a>
+                        <a href="reset-student-password.html" class="collapse-item">Reset Student Password</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Login Setting</a>
+                        <a href="tracks-and-strands.html" class="collapse-item">Tracks and Strands</a>
+                        <a href="request-settings.html" class="collapse-item">Request Settings</a>
+                        <a href="pending-requests.html" class="collapse-item">Pending Requests</a>
+                        <a href="granted-requests.html" class="collapse-item">Granted Request</a>
+                        <a href="student-login-setting.html" class="collapse-item">Student Portal Settings</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">category</span>
+                            <span class="side-text">CHED Reports</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="ched-programs.html" class="collapse-item">CHED Pograms</a>
+                        <a href="complete-list-of-enrollees.html" class="collapse-item">Complete List of Enrollees</a>
+                        <a href="enrollment-lists.html" class="collapse-item">Enrollment List</a>
+                        <a href="nstp-enrollment-lists.html" class="collapse-item">NSTP Enrollment List</a>
+                        <a href="report-on-promotions.html" class="collapse-item">Report On Promotions</a>
+                        <a href="summary-of-enrollment.html" class="collapse-item">Summary of Enrollment</a>
+                    </div>
+                </li>
+                <li class="side-item">
+                    <a class="side-link has-children" href="#">
+                        <div class="me-auto d-flex align-items-center gap-2">
+                            <span class="material-symbols-rounded">receipt_long</span>
+                            <span class="side-text">Reports and Records</span>
+                        </div>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </a>
+                    
+                    <div class="side-menu-collapse">
+                        <a href="classlist-report.html" class="collapse-item">Classlist Report</a>
+                        <a href="download-student-profile.html" class="collapse-item">Download Student Profile</a>
+                        <a href="enrollment-list-by-student-type.html" class="collapse-item">Enrollment List By Student Type</a>
+                        <a href="exam-permit-report.html" class="collapse-item">Exam Permit Report</a>
+                        <a href="gwa-reports.html" class="collapse-item">GWA Reports</a>
+                        <a href="list-of-transferees.html" class="collapse-item">List of Transferees</a>
+                        <a href="master-list-by-course.html" class="collapse-item">Masterlist By Course</a>
+                        <a href="master-list-by-course-enrollee.html" class="collapse-item">Masterlist By Course Enrollee</a>
+                        <a href="student-directories.html" class="collapse-item">Student Directories</a>
+                        <a href="summary-of-grades.html" class="collapse-item">Summary of Grades</a>
+                        <a href="students-with-promisory-note.html" class="collapse-item">Students with Promisory Note</a>
+                        <a href="students-bin.html" class="collapse-item">Student Bin</a>
+                        <a href="withdrawn-students.html" class="collapse-item">Withdrawn Students</a>
+                    </div>
+                </li>
+                <li class="side-item-header">Settings</li>
+                <li class="side-item">
+                    <a class="side-link" href="profile.html">
+                        <span class="material-symbols-rounded">person</span>
+                        <span class="side-text">Profile</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-password.html">
+                        <span class="material-symbols-rounded">password</span>
+                        <span class="side-text">Change Password</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="change-school-year.html">
+                        <span class="material-symbols-rounded">change_circle</span>
+                        <span class="side-text">Change School Year</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="bread">
+                    <ol class="bread-menu">
+                        <li class="bread-item">
+                            <a href="#" class="bread-link">Dashboard</a>
+                        </li>
+                        <li class="bread-item">
+                            <a href="#" class="bread-link" aria-current="page">Settings</a>
+                        </li>
+                        <li class="bread-item">
+                            <span class="bread-link" aria-current="page">Student Profile</span>
+                        </li>
+                    </ol>
+                    <h4>Profile - Avila, Ronnel Dime</h4>
+                </div>
+
+                <div class="row g-4 mt-1">
+                    <div class="col-xl-12">
+                        <form action="">
+                            <div class="background-color-card px-3 py-3 rounded-3 shadow-sm sticky-top">
+                                <div class="font-size-18 font-weight-600 mb-3">Search Student</div>
+                                <div class="row g-3">
+                                    <div class="col-xl-10">  
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Student ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2">
+                                        <button type="submit" class="button-primary block"><span class="material-symbols-rounded">search</span> Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="header background-color-warning">
+                                <div class="position-relative display-flex justify-content-between padding-left-2 padding-right-2">
+                                    <img src="assets/placeholders/student.png" class="avatar-img mt-5" alt="">
+                                    <div class="dropdown position-absolute top-0 right-0">
+                                        <button type="button" class="button-secondary circle" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-symbols-rounded">more_vert</span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">history_edu</span> View Curriculum</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">qr_code</span> View QR Code</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">change_circle</span> Change Enrollment</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">badge</span> Generate Student Portal</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">overview</span> Course Overview</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">dataset</span> Set Curriculum</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">cancel</span> Withdraw</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="material-symbols-rounded">delete</span> Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body p-4">
+                                <div class="h4 font-weight-600 margin-top-3">Avila, Ronnel Dime - Student</div>
+                                <div class="text-color-dark font-size-14">BS Information System 1 at La Verdad Christian College Inc.</div>
+                                <p class="font-size-12 text-muted mb-0">Apalit, Pampanga, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="d-flex align-items-center justify-content-between gap-3 background-color-card py-3 px-3 rounded-3 shadow-sm">
+                            <div class="font-size-18 font-weight-600 d-flex align-items-center gap-3">
+                                <div class="initial-circle-sm rounded-4 background-accent-tertiary">
+                                    <span class="material-symbols-rounded">person</span>
+                                </div>
+                                Student Profile
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="button-secondary" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-symbols-rounded">filter_list</span> More</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="student-schedule.html"><span class="material-symbols-rounded">person</span> Student Profile</a></li>
+                                    <li><a class="dropdown-item" href="student-schedule.html"><span class="material-symbols-rounded">schedule</span> Student Schedule</a></li>
+                                    <li><a class="dropdown-item" href="student-grade.html"><span class="material-symbols-rounded">grade</span> Student Grade</a></li>
+                                    <li><a class="dropdown-item" href="student-fees.html"><span class="material-symbols-rounded">percent</span> Student Fees</a></li>
+                                    <li><a class="dropdown-item" href="student-clearance.html"><span class="material-symbols-rounded">receipt_long</span> Clearance</a></li>
+                                    <li><a class="dropdown-item" href="student-transcript.html"><span class="material-symbols-rounded">description</span> Transcript</a></li>
+                                    <li><a class="dropdown-item" href="student-promisory.html"><span class="material-symbols-rounded">note</span> Promisory</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="row g-4">
+                            <div class="col-xl-4">
+                                <div id="list-example" class="list-group shadow-sm background-color-card sticky-top">
+                                    <a class="list-group-item list-group-item-action border-0 py-2 px-3 d-flex align-items-center gap-3" href="#student-info">
+                                        <div class="initial-circle-sm rounded-4 background-accent-dark">
+                                            <span class="material-symbols-rounded">person</span>
+                                        </div>
+                                        Student Information Profile
+                                    </a>
+                                    <a class="list-group-item list-group-item-action border-0 py-2 px-3 d-flex align-items-center gap-3" href="#parent-info">
+                                        <div class="initial-circle-sm rounded-4 background-accent-dark">
+                                            <span class="material-symbols-rounded">supervisor_account</span>
+                                        </div>
+                                        Parent's Information
+                                    </a>
+                                    <a class="list-group-item list-group-item-action border-0 py-2 px-3 d-flex align-items-center gap-3" href="#edu-background">
+                                        <div class="initial-circle-sm rounded-4 background-accent-dark">
+                                            <span class="material-symbols-rounded">history_edu</span>
+                                        </div>
+                                        Educational Background
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8">
+                                <form action="">
+                                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                                        <div class="font-size-18 font-weight-600 mb-3" id="student-info">Student Information Profile</div>
+                                        <div class="card">
+                                            <div class="body">
+                                                <div class="row g-4">
+                                                    <div class="col-xl-6">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">LRN</label>
+                                                            <input type="text" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Student Type</label>
+                                                            <select class="form-control" required>
+                                                                <option value="1">Regular</option>
+                                                                <option value="1">Irregular</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Senior High Track & Strand</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-6">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Previous Track --</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Previous Strand --</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Fullname</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-3">
+                                                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                                                </div>
+                                                                <div class="col-xl-3">
+                                                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                                                </div>
+                                                                <div class="col-xl-3">
+                                                                    <input type="text" class="form-control" placeholder="Middle Name" required>
+                                                                </div>
+                                                                <div class="col-xl-3">
+                                                                    <input type="text" class="form-control" placeholder="Extension Name" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Current Address</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Street No. / House Number" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Barangay --</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select City / Municipality --</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Province --</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Birth Information</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Month --</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Day--</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Year --</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Place of Birth" required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <select class="form-control" required>
+                                                                        <option disabled selected>-- Select Gender --</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Contact Information</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Mobile" required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Telephone" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Email" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Religion</label>
+                                                            <input type="text" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Nationality</label>
+                                                            <select class="form-control" required>
+                                                                <option disabled selected>-- Select --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Civil Status</label>
+                                                            <select class="form-control" required>
+                                                                <option disabled selected>-- Select --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Last School Attended</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="School Location" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="font-size-18 font-weight-600 mb-3 pt-4" id="parent-info">Parent's Information</div>
+                                        <div class="card">
+                                            <div class="body">
+                                                <div class="row g-4">
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Father's Information</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Father's Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Father's Occupation" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Father's Contact No." required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Mother's Information</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Mother's Maiden Name" required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Mother's Occupation" required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="text" class="form-control" placeholder="Mother's Contact No." required>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <input type="number" class="form-control" placeholder="No. of Children" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Guardian's Information</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Guardian's Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Guardian's Relationship" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Guardian's Contact No." required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Brother/Sister currently enrolled or graduate of this school" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="font-size-18 font-weight-600 mb-3 pt-4" id="edu-background">Educational Background</div>
+                                        <div class="card">
+                                            <div class="body">
+                                                <div class="row g-4">
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Grade I to IV</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Inclusive Year" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Honor / Award" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="GWA" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Location" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Grade 7 to 10</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Inclusive Year" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Honor / Award" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="GWA" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Location" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">College (Transferees)</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Inclusive Year" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Honor / Award" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="GWA" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Location" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">College (2nd Courser)</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Inclusive Year" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Honor / Award" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="GWA" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Location" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group">
+                                                            <label for="label" class="form-label">Vocational Course</label>
+                                                            <div class="row g-3">
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="School Name" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Inclusive Year" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="Honor / Award" required>
+                                                                </div>
+                                                                <div class="col-xl-4">
+                                                                    <input type="text" class="form-control" placeholder="GWA" required>
+                                                                </div>
+                                                                <div class="col-xl-12">
+                                                                    <input type="text" class="form-control" placeholder="Please state reason/s in choosing this school" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button-primary mt-3">Update Information</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="d-flex align-items-center justify-content-end mt-5">
+                            <a href="student-schedule.html" class="d-grid text-end gap-2">Next <div class="d-flex align-items-center gap-2 font-weight-700 text-color-primary">Student Schedule <span class="material-symbols-rounded">arrow_forward</span></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
