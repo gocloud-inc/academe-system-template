@@ -208,14 +208,18 @@ $default-transition: all 0.2s ease !default;
                         z-index: 1;
                         content: "";
                     }
+
+                    .material-symbols-rounded {
+                        font-size: 20px;
+                    }
                 }
 
                 .material-symbols-rounded {
-                    font-size: 21px;
+                    font-size: 20px;
                 }
                 
                 .side-text {
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 500;
                 }
 
