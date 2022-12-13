@@ -40,7 +40,7 @@
             <div class="upper-state sticky-top p-3">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <div class="font-size-24 font-weight-600">Messages</div>
-                    <button type="button" class="button-secondary circle"><span class="material-icons-outlined">create</span></button>
+                    <button type="button" class="button-secondary circle" data-bs-toggle="modal" data-bs-target="#newMessage"><span class="material-icons-outlined">create</span></button>
                 </div>
                 <div class="form-icon-group">
                     <span class="material-icons-outlined icon-search">search</span>
@@ -265,6 +265,51 @@
                                 <div class="display-flex justify-content-between gap-2">
                                     <button type="button" class="button-accent-medium round md block" data-bs-dismiss="modal">Cancel</button>
                                     <button type="submit" class="button-accent-danger round md block">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Message Modal -->
+    <div class="modal fade" id="newMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="newMessageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newMessageLabel">Compose New Message</h5>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-xl-12">
+                                <div class="form-group">
+                                    <label for="form" class="form-label">To (Employees)</label>
+                                    <select class="form-control">
+                                        <option selected>-- Select Recepient's --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="form-group">
+                                    <label for="form" class="form-label">To (Students)</label>
+                                    <select class="form-control">
+                                        <option selected>-- Select Recepient's --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="form-group">
+                                    <label for="form" class="form-label">Message</label>
+                                    <textarea class="form-control" cols="30" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="display-flex justify-content-between gap-2">
+                                    <button type="button" class="button-accent-medium round md block" data-bs-dismiss="modal">Maybe, later</button>
+                                    <button type="submit" class="button-accent-primary round md block">Send</button>
                                 </div>
                             </div>
                         </div>
