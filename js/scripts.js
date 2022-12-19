@@ -51,23 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Theme Switcher
     let themeBtnSwitcherEle = document.querySelector('.theme-btn-switcher');
     let themeIconSwitcher = document.querySelector('.theme-icon-switcher');
+    let themeTextSwitcher = document.querySelector('.theme-text-switcher');
 
     if (themeBtnSwitcherEle) {
         themeBtnSwitcherEle.addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
             
             if (localStorage.getItem('isDarkMode') == 'true') {
-                themeIconSwitcher.innerHTML = 'light_mode';
+                themeIconSwitcher.innerHTML = 'dark_mode';
+                themeTextSwitcher.innerHTML = 'Dark Mode';
                 localStorage.setItem('isDarkMode', false);
             } else {
-                themeIconSwitcher.innerHTML = 'dark_mode';
+                themeIconSwitcher.innerHTML = 'light_mode';
+                themeTextSwitcher.innerHTML = 'Light Mode';
                 localStorage.setItem('isDarkMode', true);
             }
         });
 
         if (localStorage.getItem('isDarkMode') == 'true') {     
             document.body.classList.toggle('dark-theme');
-            themeIconSwitcher.innerHTML = 'dark_mode';
+            themeIconSwitcher.innerHTML = 'light_mode';
+            themeTextSwitcher.innerHTML = 'Light Mode';
         }
     }
 
