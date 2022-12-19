@@ -95,7 +95,11 @@ $default-transition: all 0.2s ease !default;
             }
 
             #school-logo {
-                @media (max-width: 600px) {
+                @include md {
+                    display: none !important;
+                }
+
+                @include sm {
                     display: none !important;
                 }
 
@@ -128,7 +132,7 @@ $default-transition: all 0.2s ease !default;
     }
 
     .show-aside {
-        width: 320px;
+        width: 300px;
         display: block;
         position: fixed;
         background: var(--color-card);
@@ -186,7 +190,7 @@ $default-transition: all 0.2s ease !default;
                 .side-link.active {
                     @extend %defaultActiveState;
                 }
-                
+
                 .side-link {
                     position: relative;
                     display: flex;
@@ -207,6 +211,13 @@ $default-transition: all 0.2s ease !default;
                         left: 0;
                         z-index: 1;
                         content: "";
+                    }
+
+                    &:focus {
+                        .material-symbols-rounded.expand {
+                            transform: rotateZ(-180deg);
+                            transition: all 0.2s ease;
+                        }
                     }
 
                     .material-symbols-rounded {
@@ -308,10 +319,15 @@ $default-transition: all 0.2s ease !default;
         }
     }
 
-    .bread-header {
-        font-size: 40px;
-        font-weight: 600;
+    h4, .bread-header {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
         margin-bottom: 0.5rem;
+
+        @include sm {
+            font-size: 18px;
+        }
     }
 
     .bread-text {
